@@ -1,0 +1,73 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #131722;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.contentLeft {
+    max-width: 40%;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.descripion {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #b0b0b0;
+}
+
+.contentRight {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 320px;
+    color: black;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.exchange-container {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select, input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #131722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #1d2230;
+}
