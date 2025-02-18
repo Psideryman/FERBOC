@@ -13,18 +13,16 @@ async function exchangeRate(date, currency) {
             return `False`;
         }
         const rate = observations[0][`FX${currency}CAD`]?.v;
-        return rate ? `Exchange rate on ${date}: ${rate} CAD per ${currency}` : `False`;
+        return rate ? `${rate}` : `False`;
 
     } catch (error) {
         return`Error: ${error.message}`;
     }
 }
 
-async function getExchangeRate() {
-    const currency = "USD";
-    const date = new Date("2024-02-07");
+export async function getExchangeRate(date, currency) {
     let item = `False`;
-
+    date = new Date(date);
     let formattedDate = date.toISOString().split("T")[0];
     item = await exchangeRate(formattedDate, currency);
     while(item == `False`) {
@@ -32,8 +30,8 @@ async function getExchangeRate() {
         formattedDate = date.toISOString().split("T")[0];
         item = await exchangeRate(formattedDate, currency);
     }
-
-    console.log(item);
+    //console.log(item);
+    return item;
 }
 
 getExchangeRate();

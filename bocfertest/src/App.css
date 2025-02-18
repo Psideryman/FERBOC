@@ -1,0 +1,136 @@
+body {
+    background-color: #191A25;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.navbar {
+    height: 150px;
+    background-color: #32333e;
+    border-bottom-left-radius: 74px;
+    border-bottom-right-radius: 74px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 75px;
+}
+
+.nav-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 120px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 100px 75px 0;
+}
+
+.hero-text-container {
+    max-width: 800px;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+
+.hero-text {
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+}
+
+.info-box {
+    width: 100%;
+    max-width: 900px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.section-header {
+    font-size: 36px;
+    color: black;
+}
+
+.boxes-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.box {
+    width: 250px;
+    height: 100px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.right-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.date-input {
+    width: calc(100% - 100px);
+    margin: 25px 25px;
+    padding: 20px;
+    border-radius: 25px;
+    border: 1px solid #32333e;
+    font-size: 16px;
+}
+
+.submit-button {
+    width: 150px;
+    height: 50px;
+    background-color: #32333e;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 40px;
+    display: block;
+}
+
+.footer {
+    height: 100px;
+    background-color: #32333e;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
